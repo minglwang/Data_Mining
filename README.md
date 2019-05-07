@@ -8,8 +8,19 @@
 The main content of the project including are 
 
 - [Data Preparation](#data-preparation) 
-- [Missing Values](#missing-values) 
-- [Outliers](#Outliers)
+    - [Missing Values](#missing-values) 
+    - [Outliers](#Outliers)
+- [Classification](#classification)
+    - [Bayes Classfiers](#Bayes-classfiers)
+    - [Logistic Regression](#logistic-regression)
+    - [Tree Models](#Tree models)
+ - [Model access and selection](#model-select)
+    - [Information Criteria](#information-criteria)
+    - [Cross Validation](#cross-validation)
+    - [Confidence region](#confidence-region)
+    - [Residual analysis](#residual analysis)
+    - [Correlation test](#correlation test)
+ 
 
 ## Data Preparation
 
