@@ -7,8 +7,8 @@
 ### Table of Contents
 The main content of the project including are 
 
-- [Data Preparation](#data preparation) 
-- [Missing Values](#missing values) 
+- [Data Preparation](#data-preparation) 
+- [Missing Values](#missing-values) 
 - [Outliers](#Outliers)
 
 ## Data Preparation
