@@ -9,7 +9,7 @@
 You're sections headers will be used to reference location of destination.
 
 - [Description](#Description)
-- [How To Use](#How to use)
+- [How To Use](#How To Use)
 - [References](#References)
 - [Author Info](#author-info)
 
@@ -44,6 +44,11 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 ---
 
 ## References
+
+
+[1] Friedman, Jerome, Trevor Hastie, and Robert Tibshirani. The elements of statistical learning. Vol. 1. No. 10. New York: Springer series in statistics, 2001.
+[2] Vapnik, Vladimir. The nature of statistical learning theory. Springer science & business media, 2013.
+
 [Back To The Top](#Data_Mining)
 
 ---
