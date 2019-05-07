@@ -8,9 +8,9 @@
 ### Table of Contents
 You're sections headers will be used to reference location of destination.
 
-- [Description](#data preparation)
-- [How To Use](#Classification)
-- [References](#Model access and selection)
+- [Description](#Description)
+- [How To Use](#How to use)
+- [References](#References)
 - [Author Info](#author-info)
 
 ---
