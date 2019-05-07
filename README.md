@@ -10,7 +10,7 @@ The main content of the project including are
 - [Data Preparation](#data-preparation) 
     - [Missing Values](#missing-values) 
     - [Outliers](#Outliers)
-- [Classification](#classification)
+- [Mining and Modeling](#mining)
     - [Bayes Classfiers](#Bayes-classfiers)
     - [Logistic Regression](#logistic-regression)
     - [Tree Models](#tree-models)
@@ -36,7 +36,8 @@ The main content of the project including are
 [Back To The Top](#Data_Mining)
 
 
-## Classification
+## Mining and Modeling
+![mining](https://user-images.githubusercontent.com/45757826/57311249-8efbc180-70eb-11e9-85dc-d6a52805889e.png)
 
 #### Bayes Classfiers
 - naive Bayes
