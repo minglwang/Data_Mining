@@ -1,5 +1,5 @@
 # Data_Mining
-![DM_procedures](https://user-images.githubusercontent.com/45757826/57309318-2f4fe700-70e8-11e9-992e-13d1c9b2a9a4.png
+![DM_procedures](https://user-images.githubusercontent.com/45757826/57309318-2f4fe700-70e8-11e9-992e-13d1c9b2a9a4.png)
 
 > This is the R code for common used data mining techniques.
 ---
