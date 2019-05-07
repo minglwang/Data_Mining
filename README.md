@@ -18,13 +18,10 @@ The main content of the project including are
     - [Information Criteria](#information-criteria)
     - [Cross Validation](#cross-validation)
     - [Confidence region](#confidence-region)
-    - [Residual analysis](#residual analysis)
-    - [Correlation test](#correlation test)
+    - [Residual analysis and Correlation test](#residual-analysis)
  
 
 ## Data Preparation
-
-This reposory 
 
 #### Missing Values
 
@@ -35,7 +32,33 @@ This reposory
 
 [Back To The Top](#Data_Mining)
 
-#### Bayes Classifiers
+
+## Classification
+
+#### Bayes Classfiers
+- naive Bayes
+- K nearest neigbors
+- Linear Discriminant analysis
+- Quadratic Discriminant analysis
+
+#### Logistic regression
+
+#### Tree Models
+- binary tree
+- random forest
+- Ada-boost
+- XG-boost
+
+[Back To The Top](#Data_Mining)
+
+
+## Model access and selection
+
+- Information Criteria
+- Cross Validation
+- Confidence region
+- esidual analysis and Correlation test
+
 ---
 
 ## How To Use
