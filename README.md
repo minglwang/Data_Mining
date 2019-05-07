@@ -22,6 +22,7 @@ The main content of the project including are
  
 
 ## Data Preparation
+![preparation](https://user-images.githubusercontent.com/45757826/57309772-ed737080-70e8-11e9-92bb-5334476f37ab.png)
 
 #### Missing Values
 
