@@ -10,7 +10,7 @@ The main content of the project including are
 - [Data Preparation](#data-preparation) 
     - [Missing Values](#missing-values) 
     - [Outliers](#Outliers)
-- [Mining and Modeling](#mining)
+- [Mining and Modeling](#mining-and-modeling)
     - [Bayes Classfiers](#Bayes-classfiers)
     - [Logistic Regression](#logistic-regression)
     - [Tree Models](#tree-models)
