@@ -79,9 +79,9 @@ The main content of the project including are
 ## References
 
 
-[1] Friedman, Jerome, Trevor Hastie, and Robert Tibshirani. The elements of statistical learning. Vol. 1. No. 10. New York: Springer series in statistics, 2001.
+1. Friedman, Jerome, Trevor Hastie, and Robert Tibshirani. The elements of statistical learning. Vol. 1. No. 10. New York:     Springer series in statistics, 2001.
 
-[2] Vapnik, Vladimir. The nature of statistical learning theory. Springer science & business media, 2013.
+2. Vapnik, Vladimir. The nature of statistical learning theory. Springer science & business media, 2013.
 
 [Back To The Top](#Data_Mining)
 
