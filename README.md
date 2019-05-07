@@ -1,5 +1,5 @@
 # Data_Mining
-![Project Image](project-image-url)
+![Project Image](https://user-images.githubusercontent.com/45757826/57308298-6ae9b180-70e6-11e9-8be7-1de4a4b212de.png)
 
 > This is the R code for common used data mining techniques.
 ---
