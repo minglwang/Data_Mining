@@ -24,7 +24,7 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 - Technology 1
 - Technology 2
 
-[Back To The Top](#data mining)
+[Back To The Top](#Data_Mining)
 
 ---
 
@@ -39,23 +39,23 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 ```html
     <p>dummy code</p>
 ```
-[Back To The Top](#read-me-template)
+[Back To The Top](#Data_Mining)
 
 ---
 
 ## References
-[Back To The Top](#read-me-template)
+[Back To The Top](#Data_Mining)
 
 ---
 
 
-[Back To The Top](#data mining)
+[Back To The Top](#Data_Mining)
 
 ---
 
 ## Author Info
 
-- Linkedin - [@mingliang](https://www.linkedin.com/in/mingliang-wang-805127180/)
+- Linkedin - [@Mingliang](https://www.linkedin.com/in/mingliang-wang-805127180/)
 - Website - [Mingliang](https://www.kth.se/profile/miwan)
 
-[Back To The Top](#data mining)
+[Back To The Top](#Data_Mining)
