@@ -13,7 +13,7 @@ The main content of the project including are
 - [Classification](#classification)
     - [Bayes Classfiers](#Bayes-classfiers)
     - [Logistic Regression](#logistic-regression)
-    - [Tree Models](#Tree models)
+    - [Tree Models](#tree-models)
  - [Model access and selection](#model-select)
     - [Information Criteria](#information-criteria)
     - [Cross Validation](#cross-validation)
