@@ -1,8 +1,8 @@
 # Data_Mining
+
 <p align="center">
     <img width="300" height="400" src="https://user-images.githubusercontent.com/45757826/57309318-2f4fe700-70e8-11e9-992e-13d1c9b2a9a4.png">
 </p>
----
 
 ### Table of Contents
 The main content of the project including are 
@@ -14,7 +14,7 @@ The main content of the project including are
     - [Bayes Classfiers](#Bayes-classfiers)
     - [Logistic Regression](#logistic-regression)
     - [Tree Models](#tree-models)
- - [Model access and selection](#model-select)
+- [Model access and selection](#model-select)
     - [Information Criteria](#information-criteria)
     - [Cross Validation](#cross-validation)
     - [Confidence region](#confidence-region)
