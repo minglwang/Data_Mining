@@ -55,18 +55,36 @@ Finially, the missing values and outliers are also common problems which require
 We consider the missing values sets
 - maybe irrelevant to the desired result
 - maybe a few in number
-We need to impute missing data **manually or statistically**. The manual way is to delete the sample with one or more missing values. It can be fulfilled by the code:
+We need to impute missing data **manually or statistically**. The easiest way is to throw away all the incomplete observations. It can be fulfilled by the code:
 ```R
 data_complete<-date[complete.cases(d),]
 ```
-Another commonly used method is toto "fill in", or impute the missing data, e.g., with the sample mean values of the variable. Rubin (1987) argued that repeating imputation even a few times (5 or less) enormously improves the quality of estimation. There also other approaches, e.g. **interpolation** use the complete samples, or **generative approaches** like the expectation-maximization algorithm.
+However, this may lead to biased sample if the values are non-random missing.
+```R
+set.seed(12345)
+d<-matrix(rnorm(5000),ncol=10)
+x1<-replace(d,d<2,NA)
+x2<-replace(d,d>2,NA)
+x3<-replace(d,x1>2,NA)
+c1<-x1[complete.cases(x1),]
+c2<-x2[complete.cases(x2),]
+c3<-x3[complete.cases(x3),]
+```
+Then we calculate the mean of "c1", "c2", "c3" which is shown in Figure 2.
+<p align="center">
+    <img width="800" height="300" src="https://user-images.githubusercontent.com/45757826/57361932-e3e81800-717d-11e9-92ba-cb3b3415d973.png">
+    
+Figure 2. Means of "c1", "c2", "c3" 
+</p>
+
+
+
+Another commonly used method is toto "fill in", or impute the missing data, e.g., with the sample mean values of the variable. Rubin (1987) argued that repeating imputation even a few times (5 or less) enormously improves the quality of estimation. There also other approaches, e.g. **interpolation** use the complete samples, or **generative approaches** like the expectation-maximization (**EM**) algorithm.
 
 
 #### Outliers
 
-<img src="http://latex.codecogs.com/svg.latex?p" border="0"/>-variate normal distribution, that is <img src="http://latex.codecogs.com/svg.latex?X_1, \cdots, X_n" border="0"/>, i.i.d., with distribution <img src="http://latex.codecogs.com/svg.latex?\mathcal{N}(\mu,\Sigma)" border="0"/>. According to distribution theory, the Mahalanobis distance <img src="http://latex.codecogs.com/svg.latex?D^2 = (x-\bar{x})^{T}S^{-1}(x-\bar{x})\sim\chi^2(p)" border="0"/>$$$$
-where $x$ are one of the samples of <img src="http://latex.codecogs.com/svg.latex?X_1, \cdots, X_n" border="0"/> is the sample mean, <img src="http://latex.codecogs.com/svg.latex?S" border="0"/> is the sample covariance. If the observation with <img src="http://latex.codecogs.com/svg.latex?D^2" border="0"/> greater than a pre-assigned level (say 99%) of a Chi-square distribution with $p$ degrees of freedom, then this observation is an outlier.
-
+The outliers are also a very important
 
 [Back To The Top](#Data_Mining)
 
