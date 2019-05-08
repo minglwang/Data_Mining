@@ -70,12 +70,15 @@ c1<-x1[complete.cases(x1),]
 c2<-x2[complete.cases(x2),]
 c3<-x3[complete.cases(x3),]
 ```
-Then we calculate the mean of "c1", "c2", "c3" which is shown in Figure 2.
-<p align="center">
-    <img width="800" height="300" src="https://user-images.githubusercontent.com/45757826/57361932-e3e81800-717d-11e9-92ba-cb3b3415d973.png">
-    
-Figure 2. Means of "c1", "c2", "c3" 
-</p>
+Then we calculate the mean of "c1", "c2", "c3" which is shown in Table 1.
+
+ Table 1.  Means of the variable 1 in "d", "c1", "c2" and "c3". 
+| data        | variable 1      |
+| ------------- |:-------------:| 
+| "d"           | 0.082         |
+| "c1"          | 0.1233        | 
+| "c2"          | 0.038         | 
+| "c3"          | 0.088         | 
 
 Another commonly used method is toto "fill in", or impute the missing data, e.g., with the sample mean values of the variable. Rubin (1987) argued that repeating imputation even a few times (5 or less) enormously improves the quality of estimation. A better yet more complicated way is to used the available record to compute the distance bettween two records.
 
@@ -85,11 +88,11 @@ There also other approaches, e.g. **interpolation** use the complete samples, or
 
 #### Outliers
 
-The outer liers can be caused by many reasons e.g. miss entry. They are easily detect in low dimension data, e.g. using the boxplot in Figure 3. 
+The outer liers can be caused by many reasons e.g. miss entry. They are easily detect in low dimension data, e.g. using the boxplot in Figure 2. 
 <p align="center">
     <img width="400" height="200" src="https://user-images.githubusercontent.com/45757826/57362948-375b6580-7180-11e9-981b-5ab7b78b321a.png">
     
-Figure 3. boxplot
+Figure 2. boxplot
 </p>
 
 However, in large dataset, we may use Grubb's test (Z-score) [3] which only consider the marginal distribution of each variable. Other outlier detection methods include
@@ -99,7 +102,6 @@ However, in large dataset, we may use Grubb's test (Z-score) [3] which only cons
 A better way to deal with outliers in continous variables is the Mahalanobis Distance method. The detail of the method can be found in [MD method](https://github.com/minglwang/Data_Mining/blob/master/1-data_preparation/data_preparation.pdf)   
 The method is applied to the home equity loan data, the Mahalanobis distance is caculated and presented in Figure 4.
 
-Figure 3. 
 <p align="center">
     <img width="400" height="200" src="https://user-images.githubusercontent.com/45757826/57362948-375b6580-7180-11e9-981b-5ab7b78b321a.png">
     
