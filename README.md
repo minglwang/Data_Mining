@@ -25,7 +25,7 @@ The main content of the project including are
 ## Data Preparation
 The procedures for data preparation is demonstrated in the following Figure 1. In the first step, we need to identify what kind of data is needed for the bussiness metric and extract the data from our database (or do the experiments to gather the data). In the next step, we need to aggregate different types of data and cleanse the data by dealing with missing values and outliers. Finally, we divided the "clean" data in to two groups: one for modeling (discovery) and one for modeling evaluation.
 <p align="center">
-    <img width="800" height="300" src="https://user-images.githubusercontent.com/45757826/57309772-ed737080-70e8-11e9-92bb-5334476f37ab.png">
+    <img width="600" height="250" src="https://user-images.githubusercontent.com/45757826/57309772-ed737080-70e8-11e9-92bb-5334476f37ab.png">
     
 Figure 1. Procedures for data preparation
 </p>
@@ -108,8 +108,8 @@ A better way to deal with outliers in continous variables is the Mahalanobis Dis
 The method is applied to the home equity loan data, the Mahalanobis distance is caculated and presented in Figure 4.
 
 <p align="center">
-    <img width="400" height="200" src="https://user-images.githubusercontent.com/45757826/57362948-375b6580-7180-11e9-981b-5ab7b78b321a.png">
-    
+    <img width="400" height="200" src="https://user-images.githubusercontent.com/45757826/57366427-3bd74c80-7187-11e9-950f-8486a7fa8287.png">
+
 Figure 4. Mahalanobis distance of the home equity loan data.
 </p>
 
@@ -117,8 +117,9 @@ Figure 4. Mahalanobis distance of the home equity loan data.
 
 
 ## Mining and Modeling
-![mining](https://user-images.githubusercontent.com/45757826/57311249-8efbc180-70eb-11e9-85dc-d6a52805889e.png)
-
+<p align="center">
+    <img width="600" height="250" src="https://user-images.githubusercontent.com/45757826/57311249-8efbc180-70eb-11e9-85dc-d6a52805889e.png">
+    
 #### Bayes Classfiers
 - naive Bayes
 - K nearest neigbors
