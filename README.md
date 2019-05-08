@@ -179,7 +179,7 @@ error.k20=error[4]
 We compare the performance of above methods on the Zipcode data. The results on the testing data are shown in Figure 4.
 
 <p align="center">
-    <img width="600" height="350" src="https://user-images.githubusercontent.com/45757826/57391376-b40d3480-71be-11e9-85aa-a765a9df6920.png">
+    <img width="600" height="400" src="https://user-images.githubusercontent.com/45757826/57391376-b40d3480-71be-11e9-85aa-a765a9df6920.png">
     
 Figure 4. Compare the Bayes classifiers
 </p>
