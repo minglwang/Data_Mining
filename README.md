@@ -12,7 +12,7 @@ The main content of the project including are
     - [Missing Values](#missing-values) 
     - [Outliers](#Outliers)
 - [Mining and Modeling](#mining-and-modeling)
-    - [Bayes Classfiers](#Bayes-classfiers)
+    - [Bayes Classifiers](#Bayes-classfiers)
     - [Logistic Regression](#logistic-regression)
     - [Tree Models](#tree-models)
 - [Model access and selection](#model-select)
@@ -47,7 +47,7 @@ In addition, we may have **redundent data** like
 - changes in varaible over time not reflected in database
 
 and **irrelvant data** (which requires dimension reduction)
-The redundent data should handle by the problem-specific treatments, e.g. merge the data of the variable with different names in different databases (tool based duplication removal) or create unique record ID. In statistical theory, it is alway no harm to have more data for a variable in modeling and classification. The only cost is that more data need more computational resourses.  
+The redundent data should be handled by the problem-specific treatments, e.g. merge the data of the variable with different names in different databases (tool based duplication removal) or create unique record ID. In statistical theory, it is alway no harm to have more data for a variable in modeling and classification. The only cost is that more data need more computational resourses.  
 
 Finially, the missing values and outliers are also common problems which require special care using the knowledge of statistics. 
 
@@ -112,6 +112,7 @@ The method is applied to the home equity loan data, the Mahalanobis distance is 
 
 Figure 4. Mahalanobis distance of the home equity loan data.
 </p>
+The R code for implementing the method can be found in ["data_preparation_HMQL.R"](https://github.com/minglwang/Data_Mining/blob/master/1-data_preparation/data_preparation_HMQL.R).
 
 [Back To The Top](#Data_Mining)
 
@@ -120,11 +121,13 @@ Figure 4. Mahalanobis distance of the home equity loan data.
 <p align="center">
     <img width="600" height="250" src="https://user-images.githubusercontent.com/45757826/57311249-8efbc180-70eb-11e9-85dc-d6a52805889e.png">
     
-#### Bayes Classfiers
+#### Bayes Classifiers
+The Bayes classifiers include 
 - naive Bayes
 - K nearest neigbors
 - Linear Discriminant analysis
 - Quadratic Discriminant analysis
+ The detailed derivation of these methods can be found in the "Bayes classifier.pdf". Here, we 
 
 #### Logistic regression
 
