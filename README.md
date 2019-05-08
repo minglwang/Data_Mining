@@ -23,7 +23,14 @@ The main content of the project including are
 
     
 ## Data Preparation
-![preparation](https://user-images.githubusercontent.com/45757826/57309772-ed737080-70e8-11e9-92bb-5334476f37ab.png)
+The procedures for data preparation is demonstrated in the following Figure 1. In the first step, we need to identify what data is needed to get the bussiness metric e.g. the click-through rate and extract the data from our database. In the next step, we need to aggregate different type of data and cleanse the data by dealing with the miss values and outliers. Finally, we divided the "clean" data in to two groups: one for modeling (discovery) and one for modeling evaluation.
+<p align="center">
+    <img width="800" height="300" src="https://user-images.githubusercontent.com/45757826/57309772-ed737080-70e8-11e9-92bb-5334476f37ab.png">
+    
+Figure 1. Procedures for data preparation
+</p>
+Now, how we evaluate the data from the 
+
 <img src="http://latex.codecogs.com/svg.latex?p" border="0"/>-variate normal distribution, that is <img src="http://latex.codecogs.com/svg.latex?X_1, \cdots, X_n" border="0"/>, i.i.d., with distribution <img src="http://latex.codecogs.com/svg.latex?\mathcal{N}(\mu,\Sigma)" border="0"/>. According to distribution theory, the Mahalanobis distance <img src="http://latex.codecogs.com/svg.latex?D^2 = (x-\bar{x})^{T}S^{-1}(x-\bar{x})\sim\chi^2(p)" border="0"/>$$$$
 where $x$ are one of the samples of <img src="http://latex.codecogs.com/svg.latex?X_1, \cdots, X_n" border="0"/> is the sample mean, <img src="http://latex.codecogs.com/svg.latex?S" border="0"/> is the sample covariance. If the observation with <img src="http://latex.codecogs.com/svg.latex?D^2" border="0"/> greater than a pre-assigned level (say 99%) of a Chi-square distribution with $p$ degrees of freedom, then this observation is an outlier.
 
