@@ -113,6 +113,7 @@ The method is applied to the home equity loan data, the Mahalanobis distance is 
 Figure 4. Mahalanobis distance of the home equity loan data.
 </p>
 The R code for implementing the method can be found in 
+
 [data_clean](https://github.com/minglwang/Data_Mining/blob/master/1-data_preparation/data_preparation_HMQL.R)
 
 
