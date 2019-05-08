@@ -38,18 +38,29 @@ The possible sources of noises include：
 - technology limitaion error
 - Naming conventions misused, e.g. some names but different meaning
 - incorrect classification
-The different sources of noise has different statistical natures, e.g. the noise in the sensors is often assumed to be Gaussian noise while the network delay in the internet transmissions is often assumed to be log-normal distributed.
+
+The different sources of noise have different statistical natures, e.g. the noise in the sensors is often assumed to be Gaussian noise while the network delay in the internet transmissions is often assumed to be log-normal distributed.
 
 In addition, we may have **redundent data** like
 - variables have different names in different databases
 - raw variable in one database is a derived variable in another
 - changes in varaible over time not reflected in database
-and irrelvant data (which requires dimension reduction)
+
+and **irrelvant data** (which requires dimension reduction)
 The redundent data should handle by the problem-specific treatments, e.g. merge the data of the variable with different names in different databases (tool based duplication removal) or create unique record ID. In statistical theory, it is alway no harm to have more data for a variable in modeling and classification. The only cost is that more data need more computational resourses.  
 
-Finially, the missing values and outliers are also common problem which require special care with the knowledge of statistics. 
+Finially, the missing values and outliers are also common problems which require special care using the knowledge of statistics. 
 
 #### Missing Values
+We consider the missing values sets
+- maybe irrelevant to the desired result
+- maybe a few in number
+We need to impute missing data **manually or statistically**. The manual way is to delete the sample with one or more missing values. It can be fulfilled by the code:
+```R
+data_complete<-date[complete.cases(d),]
+```
+Another commonly used method is toto "fill in", or impute the missing data, e.g., with the sample mean values of the variable. Rubin (1987) argued that repeating imputation even a few times (5 or less) enormously improves the quality of estimation. There also other approaches, e.g. **interpolation** use the complete samples, or **generative approaches** like the expectation-maximization algorithm.
+
 
 #### Outliers
 
