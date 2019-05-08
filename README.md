@@ -108,7 +108,7 @@ A better way to deal with outliers in continous variables is the Mahalanobis Dis
 The method is applied to the home equity loan data, the Mahalanobis distance is caculated and presented in Figure 4.
 
 <p align="center">
-    <img width="400" height="200" src="https://user-images.githubusercontent.com/45757826/57366427-3bd74c80-7187-11e9-950f-8486a7fa8287.png">
+    <img width="400" height="280" src="https://user-images.githubusercontent.com/45757826/57366427-3bd74c80-7187-11e9-950f-8486a7fa8287.png">
 
 Figure 4. Mahalanobis distance of the home equity loan data.
 </p>
