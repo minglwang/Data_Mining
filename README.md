@@ -137,7 +137,7 @@ The Bayes classifiers include
 
 The illustrative codes for Bayes classifiers are given as follows:
 ```R
-#############LDA#########################
+############# LDA #########################
 library(MASS)
 library(lda)
 lda_t<-lda(V1~.,data=zip.train)
@@ -150,7 +150,7 @@ lda_test_pred<-predict(lda_t,zip.test)$class
 err_lda.train<-1-(sum(diag(table(lda_train_pred,zip.train[,1])))/sum(table(lda_train_pred,zip.train[,1])))
 err_lda.test<-1-(sum(diag(table(lda_test_pred,zip.test[,1])))/sum(table(lda_test_pred,zip.test[,1])))
 
-##################naive bayes######################
+################## naive Bayes ######################
 library(e1071)
 nb<-naiveBayes(factor(V1)~.,data=zip.train)
 
@@ -161,7 +161,7 @@ pred.test.nb<-predict(nb,zip.test)
 err_nb.train<-1-(sum(diag(table(pred.train.nb,zip.train$V1)))/sum(table(pred.train.nb,zip.train$V1)))
 err_nb.test<-1-(sum(diag(table(pred.test.nb,zip.test$V1)))/sum(table(pred.test.nb,zip.test$V1)))
 
-##########KNN############################
+########## knn ############################
 library(mclust)
 knn.train.Y<-as.factor(zip.train$V1)
 knn.test.Y<-as.factor(zip.test$V1)
