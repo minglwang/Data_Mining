@@ -80,6 +80,7 @@ Figure 2. Means of "c1", "c2", "c3"
 Another commonly used method is toto "fill in", or impute the missing data, e.g., with the sample mean values of the variable. Rubin (1987) argued that repeating imputation even a few times (5 or less) enormously improves the quality of estimation. A better yet more complicated way is to used the available record to compute the distance bettween two records.
 
 There also other approaches, e.g. **interpolation** use the complete samples, or **generative approaches** like the expectation-maximization (**EM**) algorithm.
+
 [Back To The Top](#Data_Mining)
 
 #### Outliers
@@ -95,7 +96,15 @@ However, in large dataset, we may use Grubb's test (Z-score) [3] which only cons
 - CV Rule: CV = SD/Mean, CV > Threshold => outlier
 - Resistance Rule: RS = (X-median)/MAD, RS > Threshold => outlier
 
-A better way to deal with outliers in continous variables is the Mahalanobis Distance method. The detail of the method can be found in ![MD method](https://github.com/minglwang/Data_Mining/blob/master/1-data_preparation/data_preparation.pdf)   
+A better way to deal with outliers in continous variables is the Mahalanobis Distance method. The detail of the method can be found in [MD method](https://github.com/minglwang/Data_Mining/blob/master/1-data_preparation/data_preparation.pdf)   
+The method is applied to the home equity loan data, the Mahalanobis distance is caculated and presented in Figure 4.
+
+Figure 3. 
+<p align="center">
+    <img width="400" height="200" src="https://user-images.githubusercontent.com/45757826/57362948-375b6580-7180-11e9-981b-5ab7b78b321a.png">
+    
+Figure 4. Mahalanobis distance of the home equity loan data.
+</p>
 
 [Back To The Top](#Data_Mining)
 
