@@ -151,6 +151,17 @@ The Bayes classifiers include
 - esidual analysis and Correlation test
 
 ---
+#### Cross validation
+
+<p align="center">
+<img width = "400" height = "300" src="https://user-images.githubusercontent.com/45757826/57380263-f0ce3100-71a8-11e9-9cf0-2bf095078267.png">
+
+Figure Cross validation
+</p>
+
+
+
+
 
 ## How To Use
 
