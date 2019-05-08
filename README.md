@@ -23,24 +23,39 @@ The main content of the project including are
 
     
 ## Data Preparation
-The procedures for data preparation is demonstrated in the following Figure 1. In the first step, we need to identify what data is needed to get the bussiness metric e.g. the click-through rate and extract the data from our database. In the next step, we need to aggregate different type of data and cleanse the data by dealing with the miss values and outliers. Finally, we divided the "clean" data in to two groups: one for modeling (discovery) and one for modeling evaluation.
+The procedures for data preparation is demonstrated in the following Figure 1. In the first step, we need to identify what kind of data is needed for the bussiness metric and extract the data from our database (or do the experiments to gather the data). In the next step, we need to aggregate different types of data and cleanse the data by dealing with missing values and outliers. Finally, we divided the "clean" data in to two groups: one for modeling (discovery) and one for modeling evaluation.
 <p align="center">
     <img width="800" height="300" src="https://user-images.githubusercontent.com/45757826/57309772-ed737080-70e8-11e9-92bb-5334476f37ab.png">
     
 Figure 1. Procedures for data preparation
 </p>
-Now, how we evaluate the data from the 
+
+In data preparation, we have to take the data comtamination into account which means we have to identified the **source of noise**.
+The possible sources of noises include：
+- faulty data collection instruments, e.g. sensors
+- transmission errors, e.g. intermittent errors from internet transmisssions
+- data entry error
+- technology limitaion error
+- Naming conventions misused, e.g. some names but different meaning
+- incorrect classification
+The different sources of noise has different statistical natures, e.g. the noise in the sensors is often assumed to be Gaussian noise while the network delay in the internet transmissions is often assumed to be log-normal distributed.
+
+In addition, we may have **redundent data** like
+- variables have different names in different databases
+- raw variable in one database is a derived variable in another
+- changes in varaible over time not reflected in database
+and irrelvant data (which requires dimension reduction)
+The redundent data should handle by the problem-specific treatments, e.g. merge the data of the variable with different names in different databases (tool based duplication removal) or create unique record ID. In statistical theory, it is alway no harm to have more data for a variable in modeling and classification. The only cost is that more data need more computational resourses.  
+
+Finially, the missing values and outliers are also common problem which require special care with the knowledge of statistics. 
+
+#### Missing Values
+
+#### Outliers
 
 <img src="http://latex.codecogs.com/svg.latex?p" border="0"/>-variate normal distribution, that is <img src="http://latex.codecogs.com/svg.latex?X_1, \cdots, X_n" border="0"/>, i.i.d., with distribution <img src="http://latex.codecogs.com/svg.latex?\mathcal{N}(\mu,\Sigma)" border="0"/>. According to distribution theory, the Mahalanobis distance <img src="http://latex.codecogs.com/svg.latex?D^2 = (x-\bar{x})^{T}S^{-1}(x-\bar{x})\sim\chi^2(p)" border="0"/>$$$$
 where $x$ are one of the samples of <img src="http://latex.codecogs.com/svg.latex?X_1, \cdots, X_n" border="0"/> is the sample mean, <img src="http://latex.codecogs.com/svg.latex?S" border="0"/> is the sample covariance. If the observation with <img src="http://latex.codecogs.com/svg.latex?D^2" border="0"/> greater than a pre-assigned level (say 99%) of a Chi-square distribution with $p$ degrees of freedom, then this observation is an outlier.
 
-
-#### Missing Values
-
-- Technology 1
-- Technology 2
-
-#### Outliers
 
 [Back To The Top](#Data_Mining)
 
