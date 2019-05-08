@@ -73,12 +73,17 @@ c3<-x3[complete.cases(x3),]
 Then we calculate the mean of "c1", "c2", "c3" which is shown in Table 1.
 
  Table 1.  Means of the variable 1 in "d", "c1", "c2" and "c3". 
-| data        | variable 1      |
+ 
+ <center>
+   
+| data          | variable 1    |
 | ------------- |:-------------:| 
 | "d"           | 0.082         |
 | "c1"          | 0.1233        | 
 | "c2"          | 0.038         | 
 | "c3"          | 0.088         | 
+
+</center>
 
 Another commonly used method is toto "fill in", or impute the missing data, e.g., with the sample mean values of the variable. Rubin (1987) argued that repeating imputation even a few times (5 or less) enormously improves the quality of estimation. A better yet more complicated way is to used the available record to compute the distance bettween two records.
 
