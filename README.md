@@ -55,6 +55,7 @@ Finially, the missing values and outliers are also common problems which require
 We consider the missing values sets
 - maybe irrelevant to the desired result
 - maybe a few in number
+
 We need to impute missing data **manually or statistically**. The easiest way is to throw away all the incomplete observations. It can be fulfilled by the code:
 ```R
 data_complete<-date[complete.cases(d),]
