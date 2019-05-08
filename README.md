@@ -106,12 +106,12 @@ However, in large dataset, we may use Grubb's test (Z-score) [3] which only cons
 - Resistance Rule: RS = (X-median)/MAD, RS > Threshold => outlier
 
 A better way to deal with outliers in continous variables is the Mahalanobis Distance method. The detail of the method can be found in [MD method](https://github.com/minglwang/Data_Mining/blob/master/1-data_preparation/data_preparation.pdf)   
-The method is applied to the home equity loan data, the Mahalanobis distance is caculated and presented in Figure 4.
+The method is applied to the home equity loan data, the Mahalanobis distance is caculated and presented in Figure 3.
 
 <p align="center">
     <img width="400" height="280" src="https://user-images.githubusercontent.com/45757826/57366427-3bd74c80-7187-11e9-950f-8486a7fa8287.png">
 
-Figure 4. Mahalanobis distance of the home equity loan data.
+Figure 3. Mahalanobis distance of the home equity loan data.
 </p>
 The R code for implementing the method can be found in 
 
@@ -124,16 +124,65 @@ The R code for implementing the method can be found in
 ## Mining and Modeling
 <p align="center">
     <img width="600" height="250" src="https://user-images.githubusercontent.com/45757826/57311249-8efbc180-70eb-11e9-85dc-d6a52805889e.png">
-    
+    </p>
 #### Bayes Classifiers
 The Bayes classifiers include 
 - naive Bayes
 - K nearest neigbors
 - Linear Discriminant analysis
 - Quadratic Discriminant analysis
- The detailed derivation of these methods can be found in the "Bayes classifier.pdf". Here, we 
 
+ The detailed derivation of these methods can be found in 
+ [Bayes classifier.pdf](https://github.com/minglwang/Data_Mining/blob/master/2-classification/Bayes_Classifier%20vs%20Logistic%20regression/Bayes_classifier.pdf). 
+
+The illustrative codes for Bayes classifiers are given as follows:
+```R
+#############LDA#########################
+library(MASS)
+library(lda)
+lda_t<-lda(V1~.,data=zip.train)
+train.pred.lda<-predict(lda_t,zip.train)
+test.pred.lda<-predict(lda_t,zip.test)
+
+lda_train_pred<-predict(lda_t,zip.train)$class
+lda_test_pred<-predict(lda_t,zip.test)$class
+
+err_lda.train<-1-(sum(diag(table(lda_train_pred,zip.train[,1])))/sum(table(lda_train_pred,zip.train[,1])))
+err_lda.test<-1-(sum(diag(table(lda_test_pred,zip.test[,1])))/sum(table(lda_test_pred,zip.test[,1])))
+
+##################naive bayes######################
+library(e1071)
+nb<-naiveBayes(factor(V1)~.,data=zip.train)
+
+pred.train.nb<-predict(nb,zip.train)
+pred.test.nb<-predict(nb,zip.test)
+
+
+err_nb.train<-1-(sum(diag(table(pred.train.nb,zip.train$V1)))/sum(table(pred.train.nb,zip.train$V1)))
+err_nb.test<-1-(sum(diag(table(pred.test.nb,zip.test$V1)))/sum(table(pred.test.nb,zip.test$V1)))
+
+##########KNN############################
+library(mclust)
+knn.train.Y<-as.factor(zip.train$V1)
+knn.test.Y<-as.factor(zip.test$V1)
+kk<-c(1,5,10,20)
+pre.knn.test<-sapply(kk,function(k){knn(train=zip.train,test=zip.test,cl=knn.train.Y,k=k)})
+pre.knn.train<-sapply(kk,function(k){knn(train=zip.train,test=zip.train,cl=knn.train.Y,k=k)})
+error<-apply(pre.knn.test,2,function(pre){classError(pre,knn.test.Y)$errorRate})
+error.k1=error[1]
+error.k5=error[2]
+error.k10=error[3]
+error.k20=error[4]
+```
 #### Logistic regression
+
+We compare the performance of above methods on the Zipcode data. The results on the testing data are shown in Figure 4.
+
+<p align="center">
+    <img width="600" height="350" src="https://user-images.githubusercontent.com/45757826/57391376-b40d3480-71be-11e9-85aa-a765a9df6920.png">
+    
+Figure 4. Compare the Bayes classifiers
+</p>
 
 #### Tree Models
 - binary tree
