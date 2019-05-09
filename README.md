@@ -30,8 +30,7 @@ The procedures for data preparation is demonstrated in the following Figure 1. I
 Figure 1. Procedures for data preparation
 </p>
 
-In data preparation, we have to take the data comtamination into account which means we have to identified the **source of noise**.
-The possible sources of noises include：
+In data preparation, we have to take the data comtamination into account which means we have to identified the **source of noises** which may caused by：
 - faulty data collection instruments, e.g. sensors
 - transmission errors, e.g. intermittent errors from internet transmisssions
 - data entry error
