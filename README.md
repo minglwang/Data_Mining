@@ -131,7 +131,7 @@ The Bayes classifiers include
 - Linear Discriminant analysis
 - Quadratic Discriminant analysis
 
- The detailed derivation of these methods can be found in 
+ The theoretical explaination of these methods can be found in 
  [Bayes classifier.pdf](https://github.com/minglwang/Data_Mining/blob/master/2-classification/Bayes_Classifier%20vs%20Logistic%20regression/Bayes_classifier.pdf). 
 
 The illustrative codes for Bayes classifiers are given as follows:
