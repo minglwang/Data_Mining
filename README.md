@@ -85,7 +85,7 @@ Then we calculate the mean of "c1", "c2", "c3" which is shown in Table 1.
 
 </center>
 
-Another commonly used method is toto "fill in", or impute the missing data, e.g., with the sample mean values of the variable. Rubin (1987) argued that repeating imputation even a few times (5 or less) enormously improves the quality of estimation. A better yet more complicated way is to used the available record to compute the distance bettween two records.
+Another commonly used method is to "fill in", or impute the missing data, e.g., with the sample mean values of the variable. Rubin (1987) argued that repeating imputation even a few times (5 or less) enormously improves the quality of estimation. A better yet more complicated way is to used the available record to compute the distance bettween two records.
 
 There also other approaches, e.g. **interpolation** use the complete samples, or **generative approaches** like the expectation-maximization (**EM**) algorithm.
 
