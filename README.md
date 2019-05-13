@@ -220,9 +220,7 @@ Figure Cross validation
 
 #### API Reference
 
-```html
-    <p>dummy code</p>
-```
+
 [Back To The Top](#Data_Mining)
 
 ---
