@@ -25,7 +25,7 @@ The main content of the project including are
 ## Data Preparation
 The procedures for data preparation is demonstrated in the following Figure 1. In the first step, we need to identify what kind of data is needed for the bussiness metric and extract the data from our database (or do the experiments to gather the data). In the next step, we need to aggregate different types of data and cleanse the data by dealing with missing values and outliers. Finally, we divided the "clean" data in to two groups: one for modeling (discovery) and one for modeling evaluation.
 <p align="center">
-    <img width="600" height="250" src="https://user-images.githubusercontent.com/45757826/57309772-ed737080-70e8-11e9-92bb-5334476f37ab.png">
+    <img width="660" height="250" src="https://user-images.githubusercontent.com/45757826/57309772-ed737080-70e8-11e9-92bb-5334476f37ab.png">
     
 Figure 1. Procedures for data preparation
 </p>
